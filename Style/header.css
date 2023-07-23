@@ -1,0 +1,49 @@
+.header #logo {
+    width: 45px;
+    height: 45px;
+}
+
+.header #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 80%;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: azure;
+    margin-right: 20px;
+}
+
+.header #nav a {
+    text-decoration: none;
+}
+
+.header #nav #cv {
+    background-color: #dd2e3a;
+    padding: 11px;
+    border-radius: 20px;
+    color: white;
+}
+
+.header #nav #cv:hover {
+    background-color: #db0917;
+}
+
+.header #nav_menu {
+    display: none;
+}
+
+@media screen and (max-width: 866px) {
+    .header #nav_menu {
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin-right: 20px;
+    }
+    .header #nav {
+        display: none;
+    }
+}
